@@ -18,4 +18,4 @@ altitudes = []
 for mean_motion in mean_motions:
     altitudes.append(altitude_from_mean_motion(mean_motion))
 
-print (altitudes)
+print(altitudes)
