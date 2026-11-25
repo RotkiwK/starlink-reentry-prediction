@@ -12,6 +12,10 @@ def altitude_from_mean_motion(mean_motion):
     return altitude
 
 
-print(altitude_from_mean_motion(15.5))
-print(altitude_from_mean_motion(16))
-print(altitude_from_mean_motion(15.06))
+mean_motions = [15.06, 15.3, 15.6, 15.9, 16.2]
+altitudes = []
+
+for mean_motion in mean_motions:
+    altitudes.append(altitude_from_mean_motion(mean_motion))
+
+print (altitudes)
