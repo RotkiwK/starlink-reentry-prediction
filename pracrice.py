@@ -12,7 +12,7 @@ def altitude_from_mean_motion(mean_motion):
     return altitude
 
 
-tles =[
+tles = [
     {"EPOCH": "2024-03-01", "MEAN_MOTION": 15.5},
     {"EPOCH": "2024-03-15", "MEAN_MOTION": 15.7},
     {"EPOCH": "2024-03-29", "MEAN_MOTION": 15.9},
@@ -20,5 +20,5 @@ tles =[
 
 for tle in tles:
     tle["ALTITUDE_KM"] = altitude_from_mean_motion(tle["MEAN_MOTION"])
-    print(tle["EPOCH"], round (tle["ALTITUDE_KM"], 1))
+    print(tle["EPOCH"], round(tle["ALTITUDE_KM"], 1))
     
